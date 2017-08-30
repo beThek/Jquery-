@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nombre de click</title>
+        <script src="jquery-2.2.4.js"></script>
+    </head>
+    <body>
+
+
+            <input type="text" name="test" value="0" id="output">
+            <input type="button" name="button" value="Click Me" id="ClickMe">
+
+
+
+
+
+<script>
+
+var count = $('#output').val();
+console.log(count);
+
+$('#ClickMe').click(function(){
+    clicks=clicks+1;
+    console.log(count);
+$('#output').val(count);
+});
+
+</script>
+    </body>
+</html>
